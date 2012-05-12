@@ -7,9 +7,9 @@
 #
 class App.Board
 
-  constructor: (bounds) ->
+  constructor: (bounds, context) ->
     @bounds = bounds
-    @draw()
+    @context = context
 
   draw: (strategy) ->
     @colorSquare position for position in strategy.positions()
