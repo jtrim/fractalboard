@@ -18,4 +18,4 @@ class App.TimeHashPositionStrategy
     (@_getPosition(hexPair) for hexPair in @hash.match(/.{2}/g))
 
   _getPosition: (hexPair) ->
-    parseInt(index, 16) for index in position.split(//)
+    parseInt(index, 16) for index in hexPair.split(//)

@@ -10,5 +10,5 @@ class App.BoardSchema
   reset: ->
     @layout = ((0 for i in [0..15]) for index in [0..15])
 
-  place: (xIndex, yIndex) ->
-    @layout[xIndex][yIndex] = 1
+  place: (position) ->
+    @layout[position[0]][position[1]] = 1
